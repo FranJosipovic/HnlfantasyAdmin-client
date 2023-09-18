@@ -1,0 +1,12 @@
+<nb-action icon="menu" (click)="toggleSidebar()"></nb-action>
+<h1>Admin</h1>
+<mat-icon [matMenuTriggerFor]="menu">person</mat-icon>
+<mat-menu #menu="matMenu" xPosition="before" class="menu">
+  <div mat-menu-item (click)="toggleTheme()" class="theme-changer menu-item">
+    change theme
+  </div>
+  <div mat-menu-item class="menu-item">
+    <span> Logout </span>
+    <nb-icon icon="log-out"></nb-icon>
+  </div>
+</mat-menu>
